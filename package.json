@@ -1,0 +1,22 @@
+{
+  "name": "chatServer",
+  "version": "1.0.0",
+  "description": "this is a chat server to communicate through socket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --inspect ./index.js"
+  },
+  "keywords": [],
+  "author": "kamranaslam",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
