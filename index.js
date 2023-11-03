@@ -9,7 +9,7 @@ const { v4: uuidv4 } = require("uuid");
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
   },
 });
 dotenv.config();
@@ -17,7 +17,8 @@ dotenv.config();
 const PORT = process.env.PORT || 5030;
 app.use(cors());
 app.get("/", (_req, res) => {
-  res.sendFile(__dirname + "/template/index.html");
+  // res.sendFile(__dirname + "/template/index.html");
+  res.send("welcome to the server");
 });
 
 const activeUsers = {};
