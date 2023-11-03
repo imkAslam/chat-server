@@ -81,8 +81,8 @@ open-source code you can use it and also participate to improve it further.
 
 I'm [Kamran], the developer behind this Node.js Chat Application Server. With a passion for real-time communication and web development, I created this server to provide a robust and flexible solution for chat applications.
 
-If you have any questions, suggestions, or need assistance with this project, please feel free to contact me at [your-email@example.com].
+If you have any questions, suggestions, or need assistance with this project, please feel free to contact me at [kamranaslam184@gmail.com].
 
 ## My Git Repository
 
-You can find the code for this project in my Git repository: [Your Git Repository Link](https://github.com/your-username/your-repo-name).
+You can find the code for this project in my Git repository: [Your Git Repository Link](https://github.com/imkAslam/chat-server).
