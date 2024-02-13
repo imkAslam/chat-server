@@ -21,6 +21,7 @@ app.get("/", (_req, res) => {
   res.send("welcome to the server");
 });
 
+// add the redis cache to maintain the active user and rooms for better performance and optimization 
 const activeUsers = {};
 const roomUsers = {};
 
