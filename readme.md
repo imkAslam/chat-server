@@ -85,4 +85,4 @@ If you have any questions, suggestions, or need assistance with this project, pl
 
 ## My Git Repository
 
-You can find the code for this project in my Git repository: [Your Git Repository Link](https://github.com/imkAslam/chat-server).
+You can find the code for this project in my Git repository: [Link](https://github.com/imkAslam/chat-server).
