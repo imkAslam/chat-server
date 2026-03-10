@@ -1,0 +1,29 @@
+services:
+  chat-server:
+    build: .
+    ports:
+      - "${PORT:-5030}:${PORT:-5030}"
+    environment:
+      - PORT=${PORT:-5030}
+      - CORS_ORIGIN=${CORS_ORIGIN:-}
+      - AUTH_ENABLED=${AUTH_ENABLED:-false}
+      - JWT_SECRET=${JWT_SECRET:-}
+      - ENCRYPTION_ENABLED=${ENCRYPTION_ENABLED:-false}
+      - ENCRYPTION_SECRET=${ENCRYPTION_SECRET:-}
+      - ENCRYPTION_SALT=${ENCRYPTION_SALT:-}
+      - RATE_LIMIT_ENABLED=${RATE_LIMIT_ENABLED:-true}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    profiles:
+      - with-redis
+    restart: unless-stopped
+
+volumes:
+  redis-data:

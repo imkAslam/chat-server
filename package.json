@@ -1,22 +1,45 @@
 {
-  "name": "chatServer",
-  "version": "1.0.0",
-  "description": "this is a chat server to communicate through socket",
-  "main": "index.js",
+  "name": "chat-server",
+  "version": "2.0.0",
+  "description": "Pluggable real-time chat server — DMs, rooms, groups, notifications. Use as a library or standalone microservice.",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon --inspect ./index.js"
+    "start": "node src/server.js",
+    "dev": "nodemon --inspect src/server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "chat",
+    "websocket",
+    "socket.io",
+    "real-time",
+    "rooms",
+    "groups",
+    "notifications"
+  ],
   "author": "kamranaslam",
-  "license": "ISC",
+  "license": "Unlicense",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
     "socket.io": "^4.7.1",
-    "uuid": "^9.0.0"
+    "uuid": "^11.0.0"
+  },
+  "peerDependencies": {
+    "ioredis": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "ioredis": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "socket.io-client": "^4.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
